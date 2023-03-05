@@ -1,0 +1,26 @@
+ul li a{
+    color: rgb(235, 9, 9);
+    text-decoration: none;
+}
+
+ul li a:visited{
+    color: green;
+}
+
+ul li a:hover{
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+ul li a:focus{
+    color: blue;
+    text-decoration: underline;
+}
+
+ul li a:active{
+    color: orange;
+    text-decoration: none;
+}
+
+

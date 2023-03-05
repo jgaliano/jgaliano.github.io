@@ -1,0 +1,35 @@
+h1.titulo{
+    text-align: center;
+}
+
+.contenedor{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+section.columna_1{
+    width: 260px;
+    float: left;
+}
+
+section.columna_2{
+    width: 700px;
+    float: right;
+}
+
+li.tres_1{
+    width: 33.3%;
+    float: left;
+}
+
+li.tres_2{
+    width: 33.3%;
+    float: center;
+}
+li.tres_2{
+    width: 33.3%;
+    float: right;
+}
+

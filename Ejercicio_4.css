@@ -1,0 +1,21 @@
+.without{
+    list-style: none;
+}
+
+.circles{
+    list-style-type: circle;
+}
+
+/* existen diferentes tipos como disc, circle, square, disclousure-open, dicluosure-closed */
+
+.square{
+    list-style-type: square;
+}
+
+.italy{
+    list-style-type: upper-roman;
+}
+
+.magno{
+    list-style-type: lower-greek;
+}
