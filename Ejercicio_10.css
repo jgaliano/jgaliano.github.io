@@ -1,0 +1,60 @@
+td.white{
+    background-color: white;
+}    
+
+td.red{
+    background-color: red;
+}
+
+td.green{
+    background-color: green;
+}
+
+td.blue{
+    background-color: blue;
+}
+
+table :nth-child(1) td{
+    color: teal;
+}
+
+table :nth-child(2) td{
+    color: red;
+}
+
+table :nth-child(3) td{
+    color: blue;
+}
+
+table :nth-child(4) td{
+    color: orange;
+}
+
+table :nth-child(5) td{
+    color: purple;
+}
+
+table :nth-child(6) td{
+    color: olive;
+}
+
+table :nth-child(7) td{
+    color: fuchsia;
+}
+
+table :nth-child(8) td{
+    color: green;
+}
+
+.back{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(17, 92, 110);
+    border-radius: 15%;
+    height: 150px;
+    width: 450px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .back:hover{
+        text-decoration: underline;
+}

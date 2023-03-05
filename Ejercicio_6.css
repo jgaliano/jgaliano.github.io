@@ -1,0 +1,29 @@
+.titulo{
+    border-bottom: 2px solid #00F;
+}
+
+h2{
+    border: 2px solid #AAA;
+}
+
+.lista{
+    border-top: 4px dotted #F00;
+    border-bottom: 4px dotted #f00;
+}
+
+.contenido{
+    border: 2px dashed #0F0
+}
+
+.back{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(17, 92, 110);
+    border-radius: 15%;
+    height: 150px;
+    width: 450px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .back:hover{
+        text-decoration: underline;
+}
