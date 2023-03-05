@@ -1,0 +1,58 @@
+:root{
+    background-color: rgba(156, 153, 146, 0.788);
+}
+
+.html
+
+*{
+    background-color: rgba(156, 153, 146, 0.788);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li{
+    font-size: 25px;;
+    list-style-type: square;
+}
+
+a{
+    font-size: 25px;
+    text-decoration: solid;
+    color: black;
+}
+
+li:hover{
+    color: rgb(126, 247, 126);   
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* h1:hover{
+    background-color: blueviolet;
+    color: white;
+} */
+
+/* footer{
+    height: 35px;
+    background-color: rgb(130, 126, 122);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+/* p2:active{
+    color: blue;
+} */
+
+/* input:focus{
+    border: red 5px solid;
+} */
+
