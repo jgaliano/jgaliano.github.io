@@ -1,0 +1,100 @@
+div{
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    line-height: 180px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+._1_{
+    background-color: red;
+    transition: all linear 2s;}
+    ._1_:hover{
+        background-color: greenyellow;
+}
+
+._2_{
+    background-color: purple;
+    font-size: 15px;
+    transition: all linear 2s;}
+    ._2_:hover{
+        font-size: 40px;
+}
+
+._3_{
+    background-color:  cadetblue;
+    color: white;
+    transition: all linear 2s;}
+    ._3_:hover{
+        color: black;
+}
+
+._4_{
+    background-color: skyblue;
+    transition: all linear 2s;}
+    ._4_:hover{
+        line-height: 35px;
+}
+
+._5_{
+    background-color: teal;
+    transition: all linear 2s;}
+    ._5_:hover{
+        border-radius: 50%;
+}
+
+._6_{
+    background-color: goldenrod;
+    transition: all linear 2s;}
+    ._6_:hover{
+        box-shadow: 10px 10px 10px 10px grey;
+}
+
+._7_{
+    background-color: orangered;
+    transition: all linear 2s;}
+    ._7_:hover{
+        opacity: 0.4;
+}
+
+._8_{
+    background-color: grey;
+    transition: all linear 2s;}
+    ._8_:hover{
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+}
+
+._9_{
+    background-color: rgb(61, 92, 92);
+    transition: all linear 2s;}
+    ._9_:hover{
+        height: 360px;
+    }
+
+._10_{
+    background-color: black;
+    transition: all linear 2s;}
+    ._10_:hover{        
+        padding: 150px;
+        font-size: 40px;
+}
+
+.back{
+    margin: 120px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(17, 92, 110);
+    border-radius: 15%;
+    height: 150px;
+    width: 450px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .back:hover{
+        text-decoration: underline;
+}
