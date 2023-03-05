@@ -35,3 +35,10 @@ span.texto_cursiva{
     background-color: #000;
     font-style: italic;
 }
+
+.back{
+    text-decoration: none;
+    color: black;}
+    .back:hover{
+        text-decoration: underline;
+}
