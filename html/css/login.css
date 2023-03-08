@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+
+.logo img{
+    height: 100%;
+    float: left;
+}
+
+.ancho{
+    /* width: 95%;
+    height: 80px; */
+    background:rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.boton{
+    width: 35%;
+    height: 80px;
+    background-color: cadetblue;
+    float: left;
+    margin-left: 500px;
+    padding-top: 250px;
+}
+
+.ingreso{
+    margin-top: 20px;
+}
+
+.boton h1{
+    margin-left: 28%;
+    float: left;
+}
+
+.ingreso label{
+    margin-left: 30%;
+}
+
+.boton input{
+    margin-left: 30%;
+    border: 1px solid black;
+}
+
+.boton button{
+    margin-top: 50px;
+    padding: 15px;
+    margin-left: 39%;
+    border: 1px solid black;
+}
+
+.fondo{
+    height: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /*border: 1px solid black;*/
+}
+
+.login{
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 100px;  
+    /*border: PowderBlue 5px solid;
+    border-radius: 20px;*/
+    color: rgb(6, 7, 6);
+}
+
+.login label{
+    margin-inline: 10%;
+    color: rgb(0, 0, 0);
+}
+
+.login input{
+    margin-inline: 20px;
+}
+
+.login button{
+    margin-top: 12px;
+    padding: 18px;
+    margin-inline: 65px;
+}
+
+
+
