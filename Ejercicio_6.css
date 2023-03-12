@@ -15,15 +15,14 @@ h2{
     border: 2px dashed #0F0
 }
 
-.back{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(17, 92, 110);
-    border-radius: 15%;
-    height: 150px;
-    width: 450px;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-    .back:hover{
-        text-decoration: underline;
+.regresar{
+    margin-top: 250px;
+    text-align: center;
+    font-size: 25px;}
+    .back{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: rgb(0, 0, 0);}
+        .back:hover{
+            text-decoration: underline;
 }
