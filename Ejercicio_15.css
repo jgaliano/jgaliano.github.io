@@ -1,0 +1,85 @@
+*{
+    background-color: rgb(78, 78, 78);
+}
+
+section ul{
+    list-style: none;
+    display: flex;
+    color: black;
+}
+
+section ul li{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.rojo{
+    background-image: linear-gradient(to top, black 50%, red 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.rojo:hover{
+    background-position: top;
+    transition: all 0.3s linear;
+}
+
+.naranja{
+    background-image: linear-gradient(to top, black 50%, orange 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.naranja:hover{
+    background-position: top;
+    transition: all 0.3s linear;
+}
+
+.amarillo{
+    background-image: linear-gradient(to top, black 50%, yellow 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.amarillo:hover{
+    background-position: top;
+    transition: all 0.3s linear;
+}
+
+.verde{
+    background-image: linear-gradient(to top, black 50%, green 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.verde:hover{
+    background-position: top;
+    transition: all 0.3s linear;
+}
+
+
+.regresar{
+    margin-top: 800px;
+    text-align: center;
+    font-size: 25px;}
+    .back{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: rgb(255, 255, 255);}
+        .back:hover{
+            text-decoration: underline;
+}
+
+
+
+
