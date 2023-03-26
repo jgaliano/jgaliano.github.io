@@ -10,7 +10,7 @@
 
 h1{
     /* text-align: center; */
-    color: white;
+    color: rgb(0, 255, 157);
     font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -29,7 +29,7 @@ a{
 }
 
 li:hover{
-    color: rgb(126, 247, 126);   
+    color: rgb(0, 255, 157);
 }
 
 a:hover{
