@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas_Eventos</title>
+    <style>
+        *{
+            background: rgb(255, 255, 255);
+            /* font-size: 25px; */
+        }
+        p{
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+        }
+        #div1{
+            width: 150px;
+            height: 70px;
+            padding: 10px;
+            border: 2px solid #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <p>Este es un entorno de pruebas para los eventos de los ejercicios que se llevarán a cabo en esta rama del codigo master del proyecto general.</p>
+    <script src="/Eventos_JS/Pruebas.js"></script>
+</body>
+
+    <!-- funcion para colocar dos imagenes en el html utilizando DOMContentLoaded -->
+    <div id="observarImg"></div>
+
+
+    <br>
+    <br>
+
+    <!-- funcion para enviar formularios y redigir a pagina -->
+    <!-- <form action="ingresar.html" onsubmit="enviar()">
+        Ingrese su nombre: <input type="text">
+        <input type="submit" value="Enviar">
+    </form> -->
+
+    <!-- funcion para que indique que se seleccionó texto en la caja de texto -->
+    <!-- <input type="text" value="JavaScript" onselect="seleccionar()">
+    <p id="sel"></p> -->
+
+
+    <!-- funcion para que ele presiona o s texto cambie si se suelta el texto  -->
+    <!-- <p id="cambio" onmousedown="mouseD()" onmouseup="mouseU()">Click Aqui</p> -->
+
+    <!-- funcion para que la caja de texto cambie de color al escribir sobre ella -->
+    introduza su nombre: <input type="text" onkeydown="vuelveCambiar(this)">
+
+    <!-- funcion para darle color a una caja de texto en focus -->
+    <!-- introduzca su nombre: <input type="text" id="c1" onfocus="cambiaColor()"> -->
+
+    <!-- funcion para cuando no se puede cargar la imagen o algo parecido -->
+    <!-- <img src="/Eventos_JS/img/1.png" onerror="verImagen()" width="200px">
+    <p id="im"></p> -->
+
+
+    <!-- funcion para mover una imagen a una caja de texto NO FUNCIONÓ, QUEDO EN HACERLO Y PASAR LA SOLUCIÓN -->
+    <!-- <p>Arrastra la imagen al rectangulo</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <img src="/Eventos_JS/img/1.png" width="150" height="70" draggable="true" ondragstart="drag(event)" > -->
+
+    <!-- funcion para que responda al click -->
+    <!-- <p id="c1" onclick="cli()">Haz click aqui</p> -->
+
+    <!-- funciona para convertir el texto a mayusculas cuando pierde el foco -->
+    <!-- <input type="text" id="mayus" onchange="convertir()"> -->
+
+    <!-- funcion para indicar que perdió el foco -->
+    <!-- <input type="text" onblur="eventoBlur()"> -->
+
+    <!-- funcion para crear divs con estilo y bordes -->
+    <!-- <button type="button" onclick="agregarContenedor()">Crear DIV</button>
+    <div id="d"></div> -->
+
+    <!-- funcion para agregar texto en el contenido con apenchild -->
+    <!-- <p id="texto">Texto existente...</p>
+    <button type="button" onclick="agregarTexto()">Agregar Texto</button> -->
+
+    <!-- para crear en espejo en el codigo -->
+    <!-- <input id="entrada" onkeyup="disparador()">
+    <div id="salida" style="background-color: aquamarine;"></div> -->
+
+
+    <!-- para colocar las imagenes con el boton como la de batman -->
+    <!-- <div id="imagen"></div>
+    <button type="button" onclick="mostrarImg()">Mostrar foto</button> -->
+
+<!-- <div id="res">
+    <a href="javascript:mostrar()">hola mundo a todos </a>
+</div> -->
+</html>
