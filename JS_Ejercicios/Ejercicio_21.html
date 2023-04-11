@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_21</title>
+    <style>
+        *{
+            background-color: black;
+            font-size: 25px;
+            color: white;
+        }
+        .regresar{
+            margin-top: 40%;
+            text-align: center;
+            font-size: 25px;}
+        .back{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            color: rgb(15, 221, 152);}
+        .back:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p>2. Se trata de que dado un número entero el script muestre una cuenta atrás, es decir, una lista de números separados por coma desde el número tecleado hasta el 0.
+    </p>
+    <script>
+        var dato = prompt("Ingrese número entero: ")
+        var x = 1
+        var resultado
+        resultado = dato 
+        for(x=1; x = dato;){
+            dato = dato - 1
+            resultado+=", "+ dato 
+        }
+        alert(resultado)
+    </script>
+</body>
+<div class="regresar">
+    <a href="/index.html" class="back">Regresar a página principal</a>
+</div>   
+</html>

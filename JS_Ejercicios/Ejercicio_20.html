@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_1</title>
+    <style>
+        *{
+            background-color: black;
+            font-size: 25px;
+            color: white;
+        }
+        .regresar{
+            margin-top: 40%;
+            text-align: center;
+            font-size: 25px;}
+        .back{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            color: rgb(15, 221, 152);}
+        .back:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p>1. Mediante un script el usuario debera teclear una letra y un numero, y le programa mosrtará una cadena formada por la letra repetida del numero que haya tecleado.</p>
+    <script>
+        var letra = prompt("Ingrese una letra")
+        var numero_l = prompt("Ingrese un número")
+        var x
+        var resultado
+        resultado = letra
+        for( x = 1; x< numero_l; x++){
+            resultado
+            resultado += letra
+        }
+        alert(resultado)
+    </script>
+</body>
+<div class="regresar">
+    <a href="/index.html" class="back">Regresar a página principal</a>
+</div>    
+</html>

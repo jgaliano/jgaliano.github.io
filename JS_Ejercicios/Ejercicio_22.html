@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_22</title>
+    <style>
+        *{
+            background-color: black;
+            font-size: 25px;
+            color: white;
+        }
+        .regresar{
+            margin-top: 40%;
+            text-align: center;
+            font-size: 25px;}
+        .back{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            color: rgb(15, 221, 152);}
+        .back:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p>3. Este script debe escribir la tabla de multiplicar del número que el usuario teclee. La tabla mostrará en diferentes líneas cada producto y el resultado en la forma a x b = ab. Recuerda que el salto de línea es el carácter "\n"
+        <script>
+            var dato = prompt("Ingrese la tabla de multiplicar que desea generar: ")
+            var n_tabla, resultado, x
+            resultado = ""
+            for(x = 1; x < 11; x++){
+                n_tabla = dato * x
+                resultado += dato + " X " + x + " = " + n_tabla + "\n" 
+            }
+            alert(resultado)
+        </script>
+</p>
+</body>
+<div class="regresar">
+    <a href="/index.html" class="back">Regresar a página principal</a>
+</div>   
+</html>
