@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Eventos_JS/Calendario.js"></script>
+    <!-- <link rel="stylesheet" href="../css/calendarioC.css"> -->
+    <style>
+        *{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            /* font-size: 50px; */
+        }
+        html{
+            box-sizing: border-box;
+            height: 99%;
+        }
+        body{
+            align-items: center;
+            display: flex;
+            font-display: swap;
+            height: inherit;
+            align-items: center;
+            justify-content: center;
+        }
+        .separacion{
+            border: 1px solid rgb(255, 255, 255);
+            color: rgb(2, 163, 109);
+        }
+        .separacion_F{
+            border: 1px solid rgb(255, 255, 255);
+            color: rgb(163, 88, 2);
+        }
+        table{
+            border: solid rgb(255, 255, 255);
+            font-size: 50px;
+        }
+        .dias_calendario{
+            border: solid fuchsia;
+            background-color: rgb(0, 0, 0);
+        }
+        th{
+            width: 80px;
+        }
+        h2{
+            color: mediumblue;
+        }
+        select{
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body onload="iniciar()">
+    <!-- <h2>Calendario JS</h2> -->
+
+    <form name="frmCalendario_sup">     
+        <select name="cbMes" class=textocalendario onchange="cambiaCalendario()">
+            <script>
+                for (var i = 1; i <= 12; i++) {
+                    var strSelected = "";
+                    if (i == mes) strSelected = "SELECTED"
+                    document.write("<OPTION value=" + i + " " + strSelected + ">" + getNombreMes(i));
+                }
+            </script>
+        </select>
+        <select name="cbAnno" class=textocalendario onchange="cambiaCalendario()">
+            <script>
+                for (var i = anno - 100; i <= anno + 10; i++) {
+                    var strSelected = "";
+                    if (i == anno) strSelected = "SELECTED"
+                    document.write("<OPTION value=" + i + " " + strSelected + ">" + i);
+                }
+            </script>
+        </select>
+
+
+
+        
+        <table>
+            <thead>
+                <tr>
+                    <th class="separacion">L</th>
+                    <th class="separacion">M</th>
+                    <th class="separacion">X</th>
+                    <th class="separacion">J</th>
+                    <th class="separacion">V</th>
+                    <th class="separacion_F">S</th>
+                    <th class="separacion_F">D</th>
+                </tr>
+            </thead>
+            <tbody id="tablacalendario">   
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+</body>
+</html>

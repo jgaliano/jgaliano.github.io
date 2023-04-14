@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <title>Reloj_JS</title>
+    <style>
+       html{
+            box-sizing: border-box;
+            height: 99%;
+        }
+       *{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+        }
+        body{
+            align-items: center;
+            display: flex;
+            font-family: 'Dosis', sans-serif;
+            font-display: swap;
+            height: inherit;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input{
+            border-color: rgb(83, 182, 177);
+            box-sizing: border-box;
+            width: auto;
+            border: none;
+            font-family: 'Libre Baskerville', serif;
+        }
+        .txt_fecha{
+            /* color: red; */
+            background-size: auto;  
+            background-image: linear-gradient(-270deg,  rgb(0, 191, 255) 50%, white 20%, white 50%, rgb(153, 0, 255) 20%);
+            background-size: auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            display: inline-block; 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: texto 3s linear infinite;
+        }
+        @keyframes texto{
+        0% {
+            background-position: 0% center;
+        }
+
+        100% {
+            background-position: 200% center;
+        }
+}
+    </style>
+</head>
+            <body>
+                <script src="/Eventos_JS/Fecha.js"></script>
+            </body>
+
+            <div>
+            <form name="reloj">
+                <input type="text" name="Fecha" value="" readonly class="txt_fecha">
+            </form>
+
+            <body onload="iniciarReloj()"></body>
+            </div>
+
+
+</html>

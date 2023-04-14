@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <title>Reloj_JS</title>
+    <style>
+        body{
+            align-items: center;
+            display: flex;
+            font-display: swap;
+            height: inherit;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20%;
+        }
+       *{
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'DynaPuff', cursive;
+        }
+        input{
+            justify-content: center;
+            border-color: rgb(83, 182, 177);
+            box-sizing: border-box;
+            height: 99%;
+            width: 400px;
+        }
+
+        p{
+            justify-content: left;
+            height: 10px;
+            width: 400px;
+            text-align: left;
+            color: rgb(243, 76, 76);
+        }
+        div{
+            display: flex;   
+        }
+
+    </style>
+</head>
+<body>
+    <script src="/Eventos_JS/Reloj.js"></script>
+</body>
+
+
+<form name="reloj">
+    <div>
+        <p>Hoy es: </p>    <p>La hora es: </p>
+    </div>
+    <input type="text" name="Fecha" value="" readonly>
+    <input type="text" name="ver" value="" readonly>
+  </form>
+
+  <body onload="iniciarReloj()">
+  </body>
+
+</html>
