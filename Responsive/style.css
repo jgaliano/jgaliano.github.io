@@ -7,10 +7,6 @@
 }
 
 body{
-    /* font-family: 'Bruno Ace SC', cursive;
-    font-family: 'Castoro Titling', cursive;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif; */
     font-family: 'Bruno Ace SC', cursive;
     font-family: 'Castoro Titling', cursive;
     font-family: 'Poppins', sans-serif;
@@ -19,10 +15,10 @@ body{
 
 h1{
     font-family: 'Bruno Ace SC', cursive;
-font-family: 'Castoro Titling', cursive;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 
 }
 
@@ -36,13 +32,14 @@ nav {
 
 .icon{
     border: none;
-    float: left;
-    background-color: #ffffff;
-    height: 50px;
+    /* float: left; */
+    background-color: #fbfee5;
+    height: 90%;
     width: 40px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-size: 2px;   
     text-align: left;
+    color: #6c5013;
 }
 
 .enlace {
@@ -87,12 +84,11 @@ button {
     color: rgb(0, 0, 0);
     text-align: center;
 
-    background-size: 30px;
+    /* background-size: 30px; */
     background-repeat: no-repeat;
     background-position: left;
     
 }
-
 
 
 .opciones{
@@ -203,6 +199,9 @@ button {
             /* background-color: violet; */
             }.video_t   {
                 margin-top: 10%;
+                background-color: #ffffff;
+                width: 100%;
+                height: 80%;
 }
 
 .texto_t{
@@ -212,45 +211,17 @@ button {
     text-align: justify;
 }
 
-/* .header_i{
-    width: 100%;
-    border: solid 1px;
-}
 
-.header_1{
-    width: 25%;
-    float: left;
-
-}
-
-.header_2{
-    align-items: center;
-    float: left;
-    width: 30%;
-    border: solid 1px;
-    margin-left: 7%;
-
+iframe{
+    width: 75%;
+    height: 90%;
 }
 
 .header_3{
-   float: left;
-   border: solid 1px;
-   margin-right: none;
-} */
+    float: left;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    margin-right: 1px;
+ } 
 
 
 /*Dispositivos grandes (computadoras portátiles/computadoras de escritorio, 992px y arriba*/
@@ -270,17 +241,23 @@ button {
 
     button {
         height: 40px;
-        font-size: 16px;
+        font-size: 1px;
         background-size: 28px;
     }
 
     .compra {
         margin-left: 20px;
-        width: 225px;
+        width: 90px;
     }
 
     .login {
         width: 90px;
+    }
+    *{
+        background-color: #ffffff;
+    }
+    .section_3{
+        width: 31%;
     }
 }
 
@@ -313,19 +290,10 @@ button {
     }
 
     button {
-        margin-top: 25px;
-        height: 30px;
+        height: 33px;
         font-size: 13px;
         background-size: 25px;
-    }
-
-    .compra {
-        margin-left: 10px;
-        width: 190px;
-    }
-
-    .login {
-        width: 75px;
+        width: 52px;
     }
 
 
@@ -343,18 +311,36 @@ button {
     .tutorial_1{
         width: 400px;
     }
-
+    *{
+        background-color: rgb(255, 255, 255);
+    }
+    .header_3{
+        margin-left: 5%;
+     } 
+     .login {
+        width: 80px;
+    }
+    .icon{
+        width: 50px;
+    }
 }
 
 /*Dispositivos pequeños (tabletas de retrato y teléfonos grandes, 600px y arriba)*/
 @media (max-width:768px) {
     .logo {
-        height: 65px;
+        width: 80px;
+        height: 15px;
     }
 
     nav {
         height: 65px;
     }
+
+    .header_3{
+        float: left;
+        margin-left: 150px;
+        margin-top: 15px;
+ } 
 
     button {
         margin-top: 25px;
@@ -363,13 +349,10 @@ button {
         background-size: 20px;
     }
 
-    .compra {
-        margin-left: 200px;
-        width: 180px;
-    }
-
     .login {
         width: 75px;
+        float: left;
+
     }
 
     .checkbtn {
@@ -380,11 +363,12 @@ button {
     ul {
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         top: 80px;
-        right: 0%;
-        background-color: #454545;
+        right: -10%;
+        background-color: #ffffff;
         text-align: center;
+        /* border: solid 1px; */
         transition: all 1.5s;
     }
 
@@ -397,5 +381,19 @@ button {
     #check:checked~ul {
         left: 0;
     }
+    *{
+        background-color: rgb(255, 255, 255);
+    }
+
+    .section_1{
+        width: 95%;        
+    }
+    .section_2{
+        width: 95%;
+    }
+    .section_3{
+        width: 95%;
+    }
+    
 
 }
