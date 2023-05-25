@@ -177,5 +177,13 @@ a{
     a{
         color: white;
     }
+
+    .c6{
+        grid-column: 1/5;
+        height: auto;
+        line-height: 18px;
+        display: grid;
+        grid-template-columns: 49% 49%;
+    }
    
 }
