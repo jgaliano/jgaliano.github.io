@@ -1,0 +1,250 @@
+$color_inicial: white;
+$color_texto: rgb(0, 0, 0);
+$color_menu: aqua;
+$color_opciones: #0091e6;
+$altura_caja: 20%;
+
+*{
+    background-color: $color_inicial;
+    color: $color_texto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: 10% 55% 35%;
+    background-color: $color_texto;
+    border: 1px solid $color_inicial;
+    background-color: $color_inicial;
+}
+.c1{
+    background-color: $color_inicial;
+    color: $color_texto;
+}
+.nav-menu{
+        background-color: $color_inicial;
+        width: 100%;
+}
+ul{
+    text-decoration: none;
+    color: $color_menu;
+    background-color: $color_inicial;
+    color: $color_inicial;
+    display: inline-block;
+    margin-top: 8%;
+}
+li{
+    text-decoration: none;
+    background-color: $color_inicial;
+    color: transparent;
+    border-color: $color_inicial;
+    float: left;
+    margin-right: 3%;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color_opciones;
+}
+.caja{
+    border: 1px solid $color_inicial;
+    background-color: $color_inicial;
+    text-align: center;
+}
+.interacción{
+    float: right;
+    margin-top: 10%;
+    margin-left: 5px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: #3e3932;
+    background-color: $color_inicial;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $color_texto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.section_button{
+    margin-right: 13%;
+    
+}
+.c5{
+    grid-column: 1/5;
+    height: 850px;
+    width: 100%;
+}      
+.c6{
+    grid-column: 1/5;
+    height: auto;
+    line-height: 18px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.icon{
+    border: none;
+    background-color: $color_inicial;
+    height: 90%;
+    width: 40px;
+    font-size: 2px;
+    text-align: left;
+    color: $color_opciones;
+}
+
+img{
+    margin-top: 10%;
+    width: 80%;
+}
+
+p{
+    text-align: center;
+    text-align: justify;
+    margin-top: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.c8{
+    grid-column: 1/5;
+    height: 50px;
+    line-height: 50px;
+    color: $color_inicial;
+    font-weight: bold;
+    background-color: $color_texto;
+}
+
+.logo{
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color_opciones  ;
+    font-weight: bold;
+}
+
+@mixin caja_personalizada(){
+    background-color: $color_inicial;
+    border: 1px solid $color_texto;
+    height: 200px;
+    margin-top: 3%;
+    width: 30%;
+    float: left;
+}
+
+.caja_registro{
+    @include caja_personalizada();  
+    margin-left: 2%;
+    margin-right: 2%    
+}
+
+.caja_envio{
+    @include caja_personalizada();
+    margin-right: 2%
+}
+
+.caja_pago{
+    @include caja_personalizada();
+}
+
+@mixin caja_encabezado(){
+    background-color: $color_texto;
+    height: 20%;
+    color: $color_inicial;
+    text-align: center;
+    line-height: 250%;
+}
+
+.encabezado{
+     @include caja_encabezado();
+}
+
+.detalles_estilos{
+    background-color: $color_texto;
+    height: 8.5%;
+    color: $color_inicial;
+    text-align: center;
+    line-height: 250%;
+}
+
+@mixin cajas_datos(){
+    background-color: $color_inicial;
+    width: auto;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.radio_registro{
+    @include cajas_datos();
+}
+
+.radio_envio{
+    @include cajas_datos();
+}
+
+.radio_pago{
+    @include cajas_datos();
+}
+
+.caja_detalles{
+    background-color: $color_inicial;
+    border: 1px solid $color_texto;
+    height: 500px;
+    margin-top: 3%;
+    width: 50%;
+    float: left;    
+    margin-left: 24%;
+}
+
+.formulario{
+    text-align:end;
+    margin-right: 33%;
+  }
+
+.select_departamento{
+    width: 33.7%;
+    border: 2px solid;
+}
+
+
+
+@media (max-width:768px) {
+    .grid-layout{
+        display: grid;
+        grid-template-columns: 30% 5% 65%;
+    }
+
+    a{
+        color: white;
+    }
+
+    .caja_registro{
+        width: 45%;
+    }
+    .caja_envio{
+        width: 45%;
+    }
+    .caja_pago{
+        width: 45%;
+        margin-left: 2%;
+    }
+    .caja_detalles{
+        width: 60%;
+
+    }
+    .formulario{
+        margin-right: 20%;
+    }
+    .c5{
+        height: 1000px;
+    }
+}
+
+
+
+
