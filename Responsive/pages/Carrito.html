@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Responsive/sass/Carrito.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <div class="grid-layout">
+        <div class="caja c1">
+            <a href="/Responsive/index.html">
+                <img src="/Responsive/Media/1.png" alt="" class="logo" >
+            </a>
+        </div>
+        <div class="caja c2">
+            <ul class="nav-menu">
+                <li class="nav-inicio">
+                    <a href="/Responsive/index.html">INICIO</a>
+                </li>
+                <li class="nav-productos">
+                    <a href="/Responsive/pages/Compras.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-tiendas">
+                    <a href="#">TIENDAS</a>
+                </li>
+                <li class="nav-contacto">
+                    <a href="#">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+        <div class="caja c4">
+            <div class="section_button">
+                <button class="interacción" onclick="window.location.href='/Responsive/index.html'">
+                    <ion-icon name="person-outline" class="icon"></ion-icon> 
+                </button>
+                <button class="interacción">
+                    <ion-icon name="cart-outline" class="icon"></ion-icon>
+                </button>
+            </div>        
+        </div>
+
+        <div class="caja c5">
+            <!-- <img src="/Responsive/Media/banner_2.jpg" alt="" style="margin-top: 3%;"> -->
+            <div class="caja_registro">
+                <div class="encabezado">
+                    REGISTRO
+                </div><br><br>
+                <div class="radio_registro">
+                    <input type="radio" id="guardar_datos" name="registro" style="background-color: red;">
+                    <label for="guardar_datos">Guardar mis datos</label><br>
+                    <input type="radio" id="comprar_invitado" name="registro" style="background-color: red;">
+                    <label for="comprar_invitado">Comprar como invitado</label><br>
+                    <input type="radio" id="tengo_cuenta" name="registro" style="background-color: red;">
+                    <label for="tengo_cuenta">Ya tengo cuenta</label><br>
+                </div>  
+            </div>
+            <div class="caja_envio">
+                <div class="encabezado">
+                    MÉTODO DE ENVÍO
+                </div><br><br>
+                <div class="radio_envio">
+                    <input type="radio" id="envio_cargo" name="envio">
+                    <label for="envio_cargo">Cargo Expresso - Q35.00</label><br>
+                    <input type="radio" id="envio_bodega" name="envio">
+                    <label for="envio_bodega">Recoger en bodega - Q0.00</label><br>
+                    <input type="radio" id="envio_entrega" name="envio">
+                    <label for="envio_entrega">Entrega en 2 o 3 horas  Q30.00</label><br>
+                </div>  
+            </div>
+            <div class="caja_pago">
+                <div class="encabezado">
+                    MÉTODO DE PAGO
+                </div><br><br>
+                <div class="radio_pago">
+                    <input type="radio" id="pago_contraentrega" name="pago">
+                    <label for="pago_contraentrega">Pago contra entrega</label><br>
+                    <input type="radio" id="pago_tranferencia" name="pago">
+                    <label for="pago_tranferencia">Tranferencia o deposito bancario</label><br>
+                    <input type="radio" id="pago_tarjeta" name="pago">
+                    <label for="pago_tarjeta">Tarjeta de credito o debito</label><br>
+                </div>  
+            </div>
+            <div class="caja_detalles">
+                <div class="detalles_estilos">
+                    TUS DETALLES
+                </div><br><br>
+                <div class="formulario">
+                    <label for="nombre">Número: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre"><br><br>
+                    <label for="telefono">Telefono: </label>
+                    <input type="text" name="telefono" id="telefono" placeholder="Ingrese Telefono"><br><br>
+                    <label for="nombre">Edad: </label>
+                    <input type="text" name="edad" id="edad" placeholder="Ingrese Edad"><br><br>
+                    <label for="edad">Dirección: </label>
+                    <input type="text" name="dirección" id="dirección" placeholder="Ingrese Dirección"><br><br>
+
+                    <label for="nombre">Departamento: </label>
+                    <select name="" id="departamento" class="select_departamento">
+                        <option value="">Guatemala</option>
+                        <option value="">Escuintla</option>
+                        <option value="">Santa Rosa</option>
+                        <option value="">Petén</option>
+                        <option value="">Retalhuleu</option>
+                    </select><br><br>
+
+                    <label for="nombre">Municipio: </label>
+                    <select name="" id="municipio" class="select_departamento">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">4</option>
+                    </select>
+                </div>  
+            </div>
+        </div>
+        <div class="caja c6">
+            
+        </div>
+        <div class="caja c8">
+            ElecDom © | Todos los derechos reservados 2023
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
