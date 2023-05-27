@@ -273,11 +273,12 @@ a {
     height: 1100px;
   }
   .formulario {
-    margin-right: 15%;
+    width: 75%;
   }
   .caja_detalles {
     height: 300px;
-    margin-left: 20%;
+    margin-left: 4%;
+    width: 90%;
   }
   .detalles_estilos {
     height: auto;
