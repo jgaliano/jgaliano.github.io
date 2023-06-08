@@ -68,7 +68,7 @@
 }
 
 .carritoCompras {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   height: 1040px;
 }
 
@@ -116,6 +116,13 @@ h2 {
   border-radius: 18px;
 }
 
+.btn-agregar {
+  background-color: rgb(72, 35, 25);
+  height: 35px;
+  width: 70px;
+  border-radius: 18px;
+}
+
 .icon {
   height: 25px;
   width: 25px;
@@ -145,4 +152,125 @@ h2 {
   display: flex;
   align-items: center;
   font-size: 25px;
+}
+
+#ver-carrito {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  left: 1;
+  right: -50;
+  margin: 1px;
+  /* border-radius: 15px; */
+}
+
+.detalles-carrito {
+  display: grid;
+  grid-template-columns: 30% 25% 25% 25%;
+  grid-template-rows: 60px;
+  padding: 1px 1px;
+  text-align: center;
+}
+
+.detalles-carrito:hover {
+  background-color: #dee1b6;
+  border-radius: 10px;
+  color: white;
+  height: 60px;
+}
+
+.shop {
+  color: rgb(0, 0, 0);
+  margin-right: 40px;
+  float: left;
+  width: auto;
+  margin-top: 0%;
+  margin-left: 0%;
+  padding-top: 4px;
+}
+
+.delete_p {
+  border-radius: 10px;
+}
+
+.btn-eliminar {
+  border-radius: 10px;
+  width: 50px;
+  background-color: rgb(72, 35, 25);
+}
+
+#contenedorVerCarrito {
+  /* margin-top: -750px; */
+  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.detalles-carrito > p {
+  padding-top: 8px;
+}
+
+/* Estilos cabecera carrito o boton de cerrar */
+#cabezera-carrito {
+  background-color: rgb(255, 255, 255);
+  width: 99%;
+  color: black;
+  margin: auto;
+  height: 1px;
+}
+
+.cabeceraCarrito {
+  display: grid;
+  grid-template-columns: 75px;
+  grid-template-rows: 35px;
+  padding: 5px 5px;
+  height: 1px;
+}
+
+.cabeceraCarrito > .btn-cerrar {
+  /* background-color: transparent; */
+  background-color: rgb(255, 255, 255);
+  width: 99%;
+  height: 1px;
+}
+
+.cabeceraCarrito > p {
+  color: rgb(72, 35, 25);
+  font-size: 20px;
+  margin-top: 0;
+  width: 99%;
+  height: 1px;
+  justify-content: center;
+}
+
+/* estilos ocultar carrito */
+.ocultarCarrito {
+  display: none;
+}
+
+/* .abrirCarrito{
+    visibility: visible;
+} */
+#contador-carrito {
+  background-color: rgb(255, 255, 255);
+  width: 99%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  height: 10px;
+}
+
+#precio-total-carrito {
+  background-color: rgb(255, 255, 255);
+  width: 99%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+}
+
+.titulocarrito {
+  color: aqua;
+  width: 5px;
 }/*# sourceMappingURL=pedidos.css.map */
