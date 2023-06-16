@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video_games</title>
+    <link rel="stylesheet" href="/Responsive/sass/stock_herramientas.css">
+    <!-- <link rel="stylesheet" href="/Responsive/grid/Compras.css"> -->
+</head>
+<body>
+
+    <div class="grid-layout">
+        <div class="caja c1">
+            <a href="/Responsive/index.html">
+                <img src="/Responsive/Media/1.png" alt="" class="logo" >
+            </a>
+        </div>
+        <div class="caja c2">
+            <ul class="nav-menu">
+                <li class="nav-inicio">
+                    <a href="/Responsive/index.html">INICIO</a>
+                </li>
+                <li class="nav-productos">
+                    <a href="/Responsive/pages/Product_to_Buy.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-tiendas">
+                    <a href="/Responsive/pages/Compras.html">TIENDAS</a>
+                </li>
+                <li class="nav-contacto">
+                    <a href="#">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+        <div class="caja c4">
+            <div class="section_button">
+                <button class="interacción">
+                    <ion-icon name="person-outline" class="icon"></ion-icon> 
+                </button>
+                <button class="interacción" onclick="window.location.href='/Responsive/pages/Carrito.html'">
+                    <ion-icon name="cart-outline" class="icon"></ion-icon>
+                </button>
+            </div>        
+        </div>
+    </div>
+
+    <section class="contenedorProductos">
+    </section>
+
+    <section id="contenedorVerCarrito">
+        <section id="cabezera-carrito"></section>
+        <section id="contador-carrito"></section>
+        <section id="precio-total-carrito"></section>
+        <section id="ver-carrito"></section>
+    </section>
+    
+    <!-- <button onclick="abrirCarrito" type="button">Carrito de compras</button> -->
+    <button onclick="abrirCarrito()">Carrito de compras</button>
+    <section style="height: 500px;"></section>
+    <script src="/Responsive/JS/carrito_video_games.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <div class="caja c8">
+        ElecDom © | Todos los derechos reservados 2023
+    </div>
+</body>
+</html>
