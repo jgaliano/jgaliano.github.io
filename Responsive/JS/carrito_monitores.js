@@ -1,10 +1,10 @@
 // import {stockHerramientas} from "/js/stock_herramientas.js"
 let stockHerramientas = [
-    {id: 1, nombre: "Carreta", tipo: "THHN", color: "Anaranjado", calibre: 12, cantidad: 1, precio: 15, img: '../media/monitor1.jpg'},
-    {id: 2, nombre: "Faro", tipo: "THHN", color: "Cafe", calibre: 11, cantidad: 1, precio: 20, img: '../media/monitor2.jpg'},
-    {id: 3, nombre: "Compresor", tipo: "THHN", color: "Rojo", calibre: 10, cantidad: 1, precio: 26, img: '../media/monitor3.jpg'},
-    {id: 4, nombre: "Contador", tipo: "THHN", color: "Azul", calibre: 9, cantidad: 1, precio: 30, img: '../media/monitor4.jpg'},
-    {id: 5, nombre: "Cables", tipo: "THHN", color: "Negro", calibre: 8, cantidad: 1, precio: 35, img: '../media/monitor1.jpg'}
+    {id: 1, nombre: "Carreta", tipo: "THHN", color: "Anaranjado", calibre: 12, cantidad: 1, precio: 15, img: '../Responsive/media/monitor1.jpg'},
+    {id: 2, nombre: "Faro", tipo: "THHN", color: "Cafe", calibre: 11, cantidad: 1, precio: 20, img: '../Responsive/media/monitor2.jpg'},
+    {id: 3, nombre: "Compresor", tipo: "THHN", color: "Rojo", calibre: 10, cantidad: 1, precio: 26, img: '../Responsive/media/monitor3.jpg'},
+    {id: 4, nombre: "Contador", tipo: "THHN", color: "Azul", calibre: 9, cantidad: 1, precio: 30, img: '../Responsive/media/monitor4.jpg'},
+    {id: 5, nombre: "Cables", tipo: "THHN", color: "Negro", calibre: 8, cantidad: 1, precio: 35, img: '../Responsive/media/monitor1.jpg'}
 ];
 
 let cProductos = document.querySelector('.contenedorProductos');
