@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta múltiples películas TMDb API</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contenedor{
+            background-color: rgb(0, 0, 0);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .box{
+            width: 98%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid #333;
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            margin-top: 10%;
+            height: auto;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Peliculas</h1>
+    <div id="movieDetailsContainer" class="contenedor"></div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const apiKey = 'd30ab72bfac39f0e5f4982f00abca7da';
+            const movieIds = [157336, 502356, 940721, 520763, 872585, 569094]; // Array de IDs de películas
+            const movieDetailsContainer = document.getElementById('movieDetailsContainer');
+
+            // Itera sobre cada ID de película y realiza la solicitud a la API
+            movieIds.forEach(movieId => {
+                const apiUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}`;
+
+                // Realiza la solicitud a la API
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Crea un elemento div para cada película
+                        const movieDetailsElement = document.createElement('div');
+                        movieDetailsElement.innerHTML = `
+                            <div class="box">
+                            <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="${data.title} Poster">
+                            <h2>${data.title}</h2>
+                            <p><strong>Fecha de lanzamiento: ${data.release_date}</strong></p>
+                            </div>
+                        `;
+
+                        // Añade el elemento al contenedor
+                        movieDetailsContainer.appendChild(movieDetailsElement);
+                    })
+                    .catch(error => console.error('Error al obtener datos de la API:', error));
+            });
+        });
+    </script>
+
+</body>
+</html>
