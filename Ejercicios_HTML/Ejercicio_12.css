@@ -1,0 +1,57 @@
+.tabla{
+  border: 2px double black;  
+}
+
+tr:nth-child(2n){
+    background-color: rgb(236, 233, 185);
+}
+
+.tabla tr:hover{
+    background-color: yellow;
+}
+
+.tabla tr th{
+    border: 2px solid black;
+}
+
+.tabla tr td{
+    border: 2px solid black;
+}
+
+.tabla tr th{
+    font-weight: bold;
+    background-color: rgb(92, 226, 143);
+}
+
+img{
+    width: 20px;
+    margin-left: none;
+}
+
+.tabla tr .euro{
+    background-color: rgb(172, 220, 240);
+}
+
+.tabla tr .dolar{
+    background-color: rgb(172, 220, 240);
+}
+
+.tabla tr .libra{
+    background-color: rgb(172, 220, 240);
+}
+
+.tabla tr .yen{
+    background-color: rgb(172, 220, 240);
+}
+
+.regresar{
+    margin-top: 750px;
+    text-align: center;
+    font-size: 25px;}
+    .back{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: black;}
+        .back:hover{
+            text-decoration: underline;
+}

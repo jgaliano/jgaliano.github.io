@@ -1,0 +1,29 @@
+h2.nivel_2::first-letter{
+    font-size: 40px;
+}
+
+.sangrado{
+    text-indent: 2em;
+}
+
+a::before{
+    content: "→";
+}
+
+abbr:after{
+    content: "(" attr(title)")";
+    font-style: italic;
+}
+
+
+.regresar{
+    margin-top: 250px;
+    text-align: center;
+    font-size: 25px;}
+    .back{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: black;}
+        .back:hover{
+            text-decoration: underline;
+}

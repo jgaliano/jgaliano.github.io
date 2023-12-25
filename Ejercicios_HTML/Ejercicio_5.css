@@ -1,0 +1,39 @@
+.lista ul{
+    list-style-type: none;
+    text-align: center;
+    width: 120px;
+    padding: 0;
+}
+
+.lista ul li{
+    background-color: blue;
+    border: 2px solid white;
+}
+.lista ul li a{
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+li a:hover{
+    outline: 2px solid red;
+}
+
+li a:focus{
+    outline: 2px solid red;
+}
+
+.regresar{
+    margin-top: 650px;
+    text-align: center;
+    font-size: 25px;}
+    .back{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: black;}
+        .back:hover{
+            text-decoration: underline;
+}

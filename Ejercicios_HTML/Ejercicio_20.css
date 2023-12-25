@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #34495E;
+}
+
+/* Dispositivos extra pequeños (teléfonos, 600px y abajo) */
+@media screen and (max-width: 600px) {
+    .logo{
+        width: 0px;
+        height: 0px;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+    }
+
+    nav input{
+        display: none;
+    }
+
+    .icon{
+        
+        width: 30px;
+        height: 30px;
+    }
+    
+    nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-Inicio, .menu-Ofertas{
+        background: linear-gradient(to top , #5D6D7E 50%, #D35400 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Inicio:hover, .menu-Ofertas:hover{
+        background-position: top;
+    }
+
+    .menu-Tienda , .menu-Ingresar{
+        background: linear-gradient(to top , #5D6D7E 50%, #F1C40F 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Tienda:hover, .menu-Ingresar:hover{
+        background-position: top;
+    }
+
+    #check ~ ul{
+        display: none;
+    }
+
+    #check:checked ~ ul{
+        display: flex;
+    }
+
+    nav ul li{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+
+    .banner{
+        width: 100%;
+        height: 100px;
+        background-image: url('https://antillon.com.gt/index/wp-content/uploads/2020/05/material-electrico-antillon-web.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: banner 10s infinite;
+        margin-bottom: 15px;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parrafoP{
+        width: 95%;
+        background-color: #2C3E50;
+        color: white;
+    }
+
+    .titulo{
+        color: #F1C40F;
+        text-align: center;
+    }
+
+    .parrafo{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .resaltar{
+        color: #D35400;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+}
+
+/* Pequeños dispositivos (tabletas de retrato y teléfonos grandes, 600px y arriba)*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .logo{
+        width: 0px;
+        height: 0px;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+    }
+
+    nav input{
+        display: none;
+    }
+
+    .icon{
+        
+        width: 30px;
+        height: 30px;
+    }
+    
+    nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .menu-Inicio, .menu-Ofertas{
+        background: linear-gradient(to top , #5D6D7E 50%, #D35400 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Inicio:hover, .menu-Ofertas:hover{
+        background-position: top;
+    }
+
+    .menu-Tienda , .menu-Ingresar{
+        background: linear-gradient(to top , #5D6D7E 50%, #F1C40F 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Tienda:hover, .menu-Ingresar:hover{
+        background-position: top;
+    }
+
+    #check ~ ul{
+        display: none;
+    }
+
+    #check:checked ~ ul{
+        display: flex;
+    }
+
+    nav ul li{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+
+    .banner{
+        width: 95%;
+        margin-left: 15px;
+        height: 200px;
+        background-image: url('https://antillon.com.gt/index/wp-content/uploads/2020/05/material-electrico-antillon-web.jpgg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: banner 10s infinite;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parrafoP{
+        width: 95%;
+        background-color: #2C3E50;
+        color: white;
+    }
+
+    .titulo{
+        color: #F1C40F;
+        text-align: center;
+    }
+
+    .parrafo{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .resaltar{
+        color: #D35400;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+}
+
+
+/* Dispositivos medios (tabletas de paisaje, 768px y arriba) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    nav input{
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+    
+
+    nav ul{
+        width: 100%;
+        height: 100px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    nav ul li{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-Inicio, .menu-Ofertas{
+        background: linear-gradient(to top , #5D6D7E 50%, #D35400 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Inicio:hover, .menu-Ofertas:hover{
+        background-position: top;
+    }
+
+    .menu-Tienda , .menu-Ingresar{
+        background: linear-gradient(to top , #5D6D7E 50%, #F1C40F 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Tienda:hover, .menu-Ingresar:hover{
+        background-position: top;
+    }
+
+    .banner{
+        width: 100%;
+        height: 200px;
+        background-image: url('https://antillon.com.gt/index/wp-content/uploads/2020/05/material-electrico-antillon-web.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: banner 10s infinite;
+    }
+
+    main{
+
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parrafoP{
+        width: 95%;
+        height: auto;
+        background-color: #2C3E50;
+        color: white;
+    }
+
+    .titulo{
+        color: #F1C40F;
+        text-align: center;
+    }
+
+    .parrafo{
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 15px;
+        white-space: initial;
+    }
+
+    .resaltar{
+        color: #D35400;
+        font-size: 24px;
+        text-decoration: underline;
+    }
+}
+
+
+/* Dispositivos extra grandes (computadoras portátiles y escritorios grandes, 1200px y arriba) */
+@media screen and (min-width: 1200px) {
+    .logo{
+        width: 200px;
+        height: 100px;
+    }
+
+    nav input{
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+    
+
+    nav ul{
+        width: 100%;
+        height: 100px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    nav ul li{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-Inicio, .menu-Ofertas{
+        background: linear-gradient(to top , #5D6D7E 50%, #D35400 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Inicio:hover, .menu-Ofertas:hover{
+        background-position: top;
+    }
+
+    .menu-Tienda , .menu-Ingresar{
+        background: linear-gradient(to top , #5D6D7E 50%, #F1C40F 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Tienda:hover, .menu-Ingresar:hover{
+        background-position: top;
+    }
+
+    .banner{
+        width: 100%;
+        height: 300px;
+        background-image: url('https://antillon.com.gt/index/wp-content/uploads/2020/05/material-electrico-antillon-web.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: banner 10s infinite;
+    }
+
+    main{
+
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parrafoP{
+        width: 95%;
+        height: auto;
+        background-color: #2C3E50;
+        color: white;
+    }
+
+    .titulo{
+        color: #F1C40F;
+        text-align: center;
+    }
+
+    .parrafo{
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 20px;
+        white-space: initial;
+    }
+
+    .resaltar{
+        color: #D35400;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+}
+
+/* Dispositivos grandes (computadoras portátiles/computadoras de escritorio, 992px y arriba) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    nav input{
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+    
+
+    nav ul{
+        width: 100%;
+        height: 100px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    nav ul li{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-Inicio, .menu-Ofertas{
+        background: linear-gradient(to top , #5D6D7E 50%, #D35400 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Inicio:hover, .menu-Ofertas:hover{
+        background-position: top;
+    }
+
+    .menu-Tienda , .menu-Ingresar{
+        background: linear-gradient(to top , #5D6D7E 50%, #F1C40F 50%);
+        background-size: 100% 200%;
+        background-position: bottom;
+        transition: all 0.5s linear ;
+    }
+
+    .menu-Tienda:hover, .menu-Ingresar:hover{
+        background-position: top;
+    }
+
+    .banner{
+        width: 100%;
+        height: 250px;
+        background-image: url('https://antillon.com.gt/index/wp-content/uploads/2020/05/material-electrico-antillon-web.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: banner 10s infinite;
+    }
+
+    main{
+
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parrafoP{
+        width: 95%;
+        height: auto;
+        background-color: #2C3E50;
+        color: white;
+    }
+
+    .titulo{
+        color: #F1C40F;
+        text-align: center;
+    }
+
+    .parrafo{
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 24px;
+        white-space: initial;
+    }
+
+    .resaltar{
+        color: #D35400;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+}
+
+
+@keyframes banner{
+    0%, 30%{
+        background-image: url("https://prodimic.net/wp-content/uploads/2022/12/prodimic-post-material-electrico.jpg");
+        opacity: 1;
+    }
+    31%,34%{
+        opacity: 0.1;
+    }
+    35%, 65%{
+        background-image: url("https://www.tumaterialelectrico.com/fe-770x300-ffffff-data/fotos/11-materialelectrigog.jpg");
+        
+    }
+}

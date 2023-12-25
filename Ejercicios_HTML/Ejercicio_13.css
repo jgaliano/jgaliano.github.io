@@ -1,0 +1,33 @@
+.lista1 li{
+    list-style-type: none;
+}
+
+.lista1 a{
+    color: green;
+    text-decoration: none;
+}
+
+.lista1 li a:hover{
+    color: purple;
+}
+
+.imagen{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.imagen img{
+    width: 70px;
+}
+
+.regresar{
+    margin-top: 400px;
+    text-align: center;
+    font-size: 25px;}
+    .back{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: black;}
+        .back:hover{
+            text-decoration: underline;
+}
